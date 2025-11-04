@@ -11,10 +11,15 @@ public class CreditCard extends Account{
     }
 
     public void charge(double amount){
-
+        super.setBalance(getBalance()+amount);
     }
 
     public void pay(double amount){
 
+    }
+
+    @Override
+    public String toString() {
+        return "CreditCard:" +getBalance();
     }
 }

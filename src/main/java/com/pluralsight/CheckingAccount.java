@@ -16,4 +16,9 @@ public class CheckingAccount extends Account {
     public double getValue() {
         return 0;
     }
+
+    @Override
+    public String toString() {
+        return "CheckingAccount:" + getBalance();
+    }
 }
