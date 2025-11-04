@@ -35,5 +35,5 @@ public abstract class Account implements Valuable {
         this.balance = balance;
     }
 
-    public abstract double getValue();
+//    public abstract double getValue();
 }

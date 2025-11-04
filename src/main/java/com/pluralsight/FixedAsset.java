@@ -27,5 +27,5 @@ public abstract class FixedAsset implements Valuable {
 
     }
 
-    public abstract double getValue ();
+//    public abstract double getValue ();
 }

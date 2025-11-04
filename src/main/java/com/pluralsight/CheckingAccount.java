@@ -14,7 +14,7 @@ public class CheckingAccount extends Account {
 
     @Override
     public double getValue() {
-        return 0;
+        return getBalance();
     }
 
     @Override
