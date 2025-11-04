@@ -1,9 +1,6 @@
 package com.pluralsight.finance;
 
-import com.pluralsight.CheckingAccount;
-import com.pluralsight.CreditCard;
-import com.pluralsight.Portfolio;
-import com.pluralsight.Valuable;
+import com.pluralsight.*;
 
 import java.util.ArrayList;
 
@@ -12,13 +9,12 @@ public class FinanceApplication {
         Portfolio portfolio = new Portfolio("Networth", "Superman");
         CheckingAccount account1 = new CheckingAccount("Billy", "1233050", 15560.25);
         CreditCard account2 = new CreditCard("Bobby", "2645377", 100000);
-
-
-
+        Gold gold = new Gold("Gold Shoes", 500, 5.00);
 
 
         portfolio.addValuable(account1);
         portfolio.addValuable(account2);
+        portfolio.addValuable(gold);
         account1.deposit(50);
         account2.charge(200);
         account2.pay(5000);
