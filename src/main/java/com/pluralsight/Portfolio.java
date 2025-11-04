@@ -17,6 +17,25 @@ public class Portfolio implements Valuable {
         valuables.add(valuable);
     }
 
+    public ArrayList getMostValuable() {
+        double higestvalue = 0;
+
+        for (Valuable valuable : valuables) {
+            if (valuable.getValue() > higestvalue) {
+                higestvalue = valuable.getValue();
+            }
+//            return valuables;
+        }
+        System.out.println("Highest value: "+ higestvalue);
+        return valuables;
+    }
+
+
+    public ArrayList getLeastValuable() {
+
+        return valuables;
+    }
+
     @Override
     public double getValue() {
         return 0;
